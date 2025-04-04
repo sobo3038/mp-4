@@ -1,6 +1,12 @@
 //components/CocktailCard.tsx: the cocktail with the name, photo, and some text
 
-export default function CocktailCard({ drink }: { drink: any }) {
+type Drink = {
+    idDrink: string;
+    strDrink: string;
+    strDrinkThumb: string;
+    strInstructions: string;
+};
+export default function CocktailCard({ drink }: { drink: Drink }) {
     return (
         <div className="bg-white border border-blue-200 p-4 rounded shadow-md">
             <h2 className="text-xl font-semibold mb-2">{drink.strDrink}</h2>
