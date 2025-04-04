@@ -2,7 +2,7 @@
 
 import fetchCocktails from '@/lib/fetchCocktails'; //this gets the data from the API on the server
 import CocktailCard from './CocktailCard';
-import Link from 'next/Link';
+import Link from 'next/link';
 
 export default async function CocktailList({ name }: { name: string }) { //this function takes the name and shows the drink
     let cocktails = []; //store cocktail list
